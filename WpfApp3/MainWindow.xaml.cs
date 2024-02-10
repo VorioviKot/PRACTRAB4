@@ -102,5 +102,11 @@ namespace WpfApp3
         {
             InkCanvas1.EditingMode = InkCanvasEditingMode.EraseByStroke;
         }
+
+        private void MenuItem_Click_8(object sender, RoutedEventArgs e)
+        {
+           ///InkCanvas1.DefaultDrawingAttributes.Color = Color.;
+
+        }
     }
 }

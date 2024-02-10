@@ -20,7 +20,16 @@
                 <MenuItem Header="drow" Click="MenuItem_Click_5"/>
                 <MenuItem Header="edit" Click="MenuItem_Click_6"/>
                 <MenuItem Header="Delete" Click="MenuItem_Click_7"/>
+                
             </MenuItem>
+            <MenuItem Header="Brush etc.">
+                <MenuItem Header="color" Click="MenuItem_Click_8"/>
+
+            </MenuItem>
+                
+                
+            
+
         </Menu>
         <InkCanvas Margin="0,49,0,0" Name="InkCanvas1">
             <InkCanvas.DefaultDrawingAttributes>
