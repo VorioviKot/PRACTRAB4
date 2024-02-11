@@ -28,7 +28,7 @@ namespace WpfApp3
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
 
-        }    
+        }
         /// <summary>
         /// open in menu
         /// </summary>
@@ -105,8 +105,68 @@ namespace WpfApp3
 
         private void MenuItem_Click_8(object sender, RoutedEventArgs e)
         {
-           ///InkCanvas1.DefaultDrawingAttributes.Color = Color.;
+            ///InkCanvas1.DefaultDrawingAttributes.Color = Color.;
 
+        }
+        /// <summary>
+        /// red
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_Click_9(object sender, RoutedEventArgs e)
+        {
+            InkCanvas1.DefaultDrawingAttributes.Color = Colors.Red;
+        }
+        /// <summary>
+        /// green
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_Click_10(object sender, RoutedEventArgs e)
+        {
+            InkCanvas1.DefaultDrawingAttributes.Color = Colors.Green;
+        }
+        /// <summary>
+        /// blue
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MenuItem_Click_11(object sender, RoutedEventArgs e)
+        {
+            InkCanvas1.DefaultDrawingAttributes.Color = Colors.Blue;
+        }
+        /// <summary>
+        /// высота
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (Slider.ValueChangedEvent != null)
+            {
+                InkCanvas1.DefaultDrawingAttributes.Height = 10;
+            }
+            else
+            {
+                InkCanvas1.DefaultDrawingAttributes.Height = 1;
+            }
+
+        }
+        /// <summary>
+        /// ширина
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void wight_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (Slider.ValueChangedEvent != null)
+            {
+                InkCanvas1.DefaultDrawingAttributes.Width = 10;
+            }
+            else
+            {
+                InkCanvas1.DefaultDrawingAttributes.Width = 1;
+            }
         }
     }
 }

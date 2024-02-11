@@ -8,7 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
 
     <Grid>
-        <Menu Background="Gray" BorderBrush="Navy" BorderThickness="1" Margin="0,0,0,390" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="697*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="377*"/>
+        </Grid.RowDefinitions>
+        <Menu Background="Gray" BorderBrush="Navy" BorderThickness="1" Margin="0,0,0,13" Grid.ColumnSpan="2" >
             <MenuItem Header="file" Width="44" Click="MenuItem_Click_1">
                 <MenuItem Header="open" Click="MenuItem_Click" MouseEnter="MenuItem_MouseEnter"/>
                 <MenuItem Header="save" Click="MenuItem_Click_2"/>
@@ -20,21 +28,26 @@
                 <MenuItem Header="drow" Click="MenuItem_Click_5"/>
                 <MenuItem Header="edit" Click="MenuItem_Click_6"/>
                 <MenuItem Header="Delete" Click="MenuItem_Click_7"/>
-                
+
             </MenuItem>
             <MenuItem Header="Brush etc.">
-                <MenuItem Header="color" Click="MenuItem_Click_8"/>
-
+                <MenuItem Header="color">
+                    <MenuItem Header="red" Click="MenuItem_Click_9"/>
+                    <MenuItem Header="green" Click="MenuItem_Click_10"/>
+                    <MenuItem Header="blue" Click="MenuItem_Click_11"/>
+                </MenuItem>
             </MenuItem>
-                
-                
-            
-
         </Menu>
-        <InkCanvas Margin="0,49,0,0" Name="InkCanvas1">
+
+
+        <InkCanvas Margin="0,44,0,0" Name="InkCanvas1" Grid.Column="1" Grid.RowSpan="2">
             <InkCanvas.DefaultDrawingAttributes>
-                <DrawingAttributes Color="Blue" Height="10" Width="1"/>
+                <DrawingAttributes Color="Blue"/>
             </InkCanvas.DefaultDrawingAttributes>
         </InkCanvas>
+
+        <Slider Value="0" Minimum="0" Maximum="1" Margin="0,44,0,334" ValueChanged="Slider_ValueChanged" Grid.RowSpan="2" TickFrequency="1" IsSnapToTickEnabled="True"/>
+        <Slider Name="wight" Value="0" Minimum="0" Maximum="1" Margin="0,43,0,278" Grid.Row="1" ValueChanged="wight_ValueChanged" TickFrequency="1" IsSnapToTickEnabled="True" />
     </Grid>
+
 </Window>
