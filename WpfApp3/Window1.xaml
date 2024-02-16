@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Button Content="close" Margin="326,334,326,50" Click="Button_Click"/>
+        <Button Content="close" Margin="326,334,326,50" Click="Button_Click">
+        </Button>
         <Label Content="abut this software" Background="Aqua" Margin="313,199,313,182" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontFamily="Times New Roman" FontWeight="Bold" FontStyle="Italic"/>
         
     </Grid>

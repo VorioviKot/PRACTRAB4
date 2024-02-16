@@ -142,14 +142,7 @@ namespace WpfApp3
         /// <param name="e"></param>
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            if (Slider.ValueChangedEvent != null)
-            {
-                InkCanvas1.DefaultDrawingAttributes.Height = 10;
-            }
-            else
-            {
-                InkCanvas1.DefaultDrawingAttributes.Height = 1;
-            }
+            InkCanvas1.DefaultDrawingAttributes.Height = Height.Value;
 
         }
         /// <summary>
@@ -159,14 +152,7 @@ namespace WpfApp3
         /// <param name="e"></param>
         private void wight_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            if (Slider.ValueChangedEvent != null)
-            {
-                InkCanvas1.DefaultDrawingAttributes.Width = 10;
-            }
-            else
-            {
-                InkCanvas1.DefaultDrawingAttributes.Width = 1;
-            }
+            InkCanvas1.DefaultDrawingAttributes.Width = Wight.Value;
         }
     }
 }
